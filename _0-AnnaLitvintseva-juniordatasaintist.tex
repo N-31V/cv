@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper,russian]{moderncv} 
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc} 
+
+
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage[usenames]{xcolor}  %%% this does not work = thanks to idiots from modernCV package.
+% 
+\usepackage[scale=0.89]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}           % if you want to change the width of the column with the dates
+
+
+\firstname{Анна}
+\familyname{Литвинцева}
+
+\address{г. Санкт-Петербург}{\httplink[GitHub: N-31V]{github.com/N-31V}}
+\mobile{+7(951)656-95-00}
+\email{litvintseva\_ann@mail.ru}
+\extrainfo{Telegram: n\_31v}
+\quote{junior data scientist}
+%\renewcommand\refname{Selected publications}
+\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\renewcommand{\familydefault}{fca}
+\renewcommand{\rmdefault}{cmss} % Шрифт с засечками
+\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
+\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
+
+\begin{document}
+\makecvtitle
+
+\section{Образование}
+\cventry{2016-2020}{ Университет ИТМО}{Санкт-Петербург}
+{\newline Факультет: Cистем управления и робототехники 
+\newline Образовательная программа: Интеллектуальные технологии в робототехнике
+\newline Тема ВКР: Исследование архитектур нейронных сетей для классификации и локализации объектов на изображении (\httplink[github]{github.com/N-31V/VKR})}
+{}{}
+
+\cvline{Онлайн}{Нейронные сети (\httplink[сертификат stepik]{stepik.org/cert/177633})}
+ 
+\cvline{курсы}{Нейронные сети и компьютерное зрение (\httplink[сертификат stepik]{stepik.org/cert/250485})}
+
+\cventry{Учебный проект}
+{Робот для обнаружения и транспортировки заданного объекта (\httplink[github]{github.com/N-31V/robotic-software})}{}
+{\newline Распознавание объекта: сбор и разметка тренировочных данных, разработка и обучение свёрточной нейросети на python при помощи фреймворка TFLearn
+\newline Навигация робота: установка альтернативной прошивки leJOS на ev3 и разработка алгоритма на java
+\newline Интеграция: организация клиент-сервера между роботом и ПК (java-python)}
+{}
+{}
+
+\cventry{2013-2015}{ Университет ИТМО}{Санкт-Петербург (неоконченное по собственному желанию)}
+{\newline Факультет: Программной инженерии и компьютерной техники \newline Направление: Программная инженерия}{}{}
+
+\section{Опыт работы}
+\cventry{Январь 2017 -- Март 2020}{Старший лаборант}{Университет ИТМО}{\newline Обязанности: обеспечение технической поддержки аудиторного фонда}{}{}
+
+\section{Навыки}
+\cvline{Computer languages}{Python, C, Java, Scilab, MATLAB, asm, c\#, c++, SQL, javascript (в порядке убывания опыта)}
+\cvline{ML tools}{NumPy, PyTorch, OpenCV, Pandas, Matplotlib, Seaborn}
+\cvline{Other tools}{Linux, Bash, Git, \TeX}
+\cvline{English}{Pre-Intermediate}
+
+\section{Профессиональные интересы}
+% \cventry{Date of birth}{June 20, 1982}{}{Russian Federation}{}{}
+\cvline{Computer vision}{Самостоятельное изучение при помощи онлайн курсов, курс "основы технического зрения" в рамках учебной программы в университете, разработка нейронной сети (TFLearn) для проекта по поиску объекта роботом, исследование популярных архитектур (Pytorch) в рамках выпускной квалификационной работы.}
+\cvline{Reinforcement learning}{В перспективе представляет собой наиболее интересное мне направление, но пока знакомство поверхностное.}
+\end{document}
